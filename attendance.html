@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center">
+<div class="bg-white shadpe-xl rounded-2xl p-6 w-full max-w-md">
+    <h1 class="text-2xl font-bold text-center text-blue-700 mb-4">Lecture Attendance</h1>
+    <form action="" id="attendanceForm">
+        <div>
+            <label for="" class="text-gray-700 mb-1">Student Name:</label>
+            <input type="text" id="studentName" placeholder="Enter student name" 
+            required class="w-100 h-8 bg-white border-1 border-gray-200 hover:bg-gray-100"
+            class="w-full border border-gray-300 rounded-lg p-2 ">
+        </div><br>
+         <div>
+            <label for="" class="text-gray-700 mb-1">Matric Number:</label>
+            <input type="text" id="matricNumber" placeholder="Enter Matric No" 
+            required class="w-100 h-8 bg-white border-1 border-gray-200 hover:bg-gray-100"
+            class="w-full border border-gray-300 rounded-lg p-2 ">
+        </div><br>
+        <div>
+            <label for="" class="text-gray-700 mb-1">Course:</label>
+            <select name="" id="course" class="w-full border border-gray-300 rounded-lg p-2"
+            required class="w-100 h-8 bg-white border-1 border-gray-200 hover:bg-gray-100">
+                <option value="">--Select Course--</option>
+                <option value="">CSC202 -Assembly Languages</option>
+                <option value="">CSC206 -Operating Systems</option>
+                 <option value="">CSC208 - Data Structure</option>
+                  <option value="">PHY206 - Electric Circuit & Electronics</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="" class="text-gray-700 mb-1">Status:</label>
+            <select id="status" class="w-full border border-gray-300 rounded-lg p-2" 
+            required class="w-100 h-8 bg-white border-1 border-gray-200 hover:bg-gray-100">
+                <option value="">--Select Status--</option>
+                <option value="present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+        </div><br><br>
+
+        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Add Attendance</button>
+</form>
+        <div class="mt-6">
+            <h2 class="text-lg text-gray-700 mb-2">Attendance Records</h2>
+            <ul id="attendanceList" class="text-gray-800 text-sm"></ul>
+        </div> 
+    </div>
+
+    
+    
+
+
+
+    <script src="attendance.js"></script>
+</body>
+</html>
