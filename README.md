@@ -22,7 +22,7 @@
     Student name
     Matric number
     Course (from a dropdown menu)
-    Attendance status (Present or Absent)
+    Attendance status 
 
     When the lecturer clicks Add Attendance, the form sends the information to my Js.
 
